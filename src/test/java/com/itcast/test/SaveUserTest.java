@@ -76,9 +76,9 @@ public class SaveUserTest{
 
     @Test
     public void findUserByName(){
-        //字符串拼接
-//        List<User> users = userDao.FindUserByName("%"+"三"+"%");
         //占位符
+//        List<User> users = userDao.FindUserByName("%"+"三"+"%");
+        //字符串拼接
         List<User> users = userDao.findUserByName("张");
         for (User user : users) {
             System.out.println(user);

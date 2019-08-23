@@ -60,9 +60,9 @@ public interface IUserDao {
      * @param name
      * @return
      */
-    //字符串拼接
-//    @Select("select * from user where username like #{username}")
     //占位符
+//    @Select("select * from user where username like #{username}")
+    //字符串拼接
     @Select("select * from user where username like '%${value}%' ")
     public List<User> findUserByName(String name);
 
